@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/world.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/ui/dialogue_ui.gd" id="2"]
+[ext_resource type="Script" path="res://scripts/ui/menu_ui.gd" id="3"]
+[ext_resource type="Script" path="res://scripts/ui/shop_ui.gd" id="4"]
+
+[node name="World" type="Node3D" node_paths=PackedStringArray("dialogue_ui", "menu_ui", "shop_ui")]
+script = ExtResource("1")
+dialogue_ui = NodePath("DialogueUI")
+menu_ui = NodePath("MenuUI")
+shop_ui = NodePath("ShopUI")
+
+[node name="DialogueUI" type="CanvasLayer" parent="."]
+script = ExtResource("2")
+
+[node name="MenuUI" type="CanvasLayer" parent="."]
+script = ExtResource("3")
+
+[node name="ShopUI" type="CanvasLayer" parent="."]
+script = ExtResource("4")
