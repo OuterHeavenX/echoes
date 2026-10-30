@@ -1,0 +1,32 @@
+; Engine configuration file.
+config_version=5
+
+[application]
+config/name="Echoes of the Last Dawn"
+config/description="Original story-driven 2.5D JRPG: buried bells, stolen memories, and the people who refuse to forget."
+config/version="0.3.0-c1"
+run/main_scene="res://scenes/title.tscn"
+config/features=PackedStringArray("4.7", "GL_Compatibility")
+
+[display]
+window/size/viewport_width=960
+window/size/viewport_height=540
+window/size/resizable=true
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+textures/canvas_textures/default_texture_filter=0
+
+[input_devices]
+pointing/emulate_mouse_from_touch=false
+
+[autoload]
+Content="*res://scripts/core/content.gd"
+GameState="*res://scripts/core/game_state.gd"
+SaveMgr="*res://scripts/core/save_manager.gd"
+AudioMgr="*res://scripts/core/audio_manager.gd"
+
+[editor]
+import/merge_layers=false
