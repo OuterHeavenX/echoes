@@ -1,0 +1,7 @@
+.godot/
+dist/
+*.pck
+*.zip
+user_saves/
+__pycache__/
+.DS_Store
