@@ -1,0 +1,370 @@
+{
+ "arcanist": {
+  "abilities": [],
+  "desc": "Elemental exploitation and resource tradeoffs.",
+  "mastery": "Planned: not yet implemented.",
+  "name": "Arcanist",
+  "passives": []
+ },
+ "artificer": {
+  "abilities": [
+   {
+    "desc": "Damage and a chance to stun.",
+    "effect": "damage_stun",
+    "id": "stun_bomb",
+    "mp": 8,
+    "name": "Stun Bomb",
+    "power": 1.1,
+    "target": "enemy"
+   },
+   {
+    "desc": "Barrier and small heal for one ally.",
+    "effect": "barrier_heal",
+    "id": "repair_field",
+    "mp": 10,
+    "name": "Repair Field",
+    "power": 0,
+    "target": "ally"
+   },
+   {
+    "desc": "Slows one enemy.",
+    "effect": "slow",
+    "id": "grease_trap",
+    "mp": 6,
+    "name": "Grease Trap",
+    "power": 0,
+    "target": "enemy"
+   },
+   {
+    "desc": "Fire damage that may burn.",
+    "effect": "damage_burn",
+    "id": "overcharge",
+    "mp": 12,
+    "name": "Overcharge",
+    "power": 1.8,
+    "target": "enemy"
+   },
+   {
+    "desc": "Cleanses debuffs from the party.",
+    "effect": "cleanse_all",
+    "id": "tuning_fork",
+    "mp": 10,
+    "name": "Tuning Fork",
+    "power": 0,
+    "target": "allies"
+   },
+   {
+    "desc": "Damage to all enemies.",
+    "effect": "damage_all",
+    "id": "clockwork_barrage",
+    "mp": 18,
+    "name": "Clockwork Barrage",
+    "power": 2.2,
+    "target": "enemies"
+   }
+  ],
+  "desc": "Gadgets, traps, tactical utilities.",
+  "mastery": "Overclock: first skill each battle costs no MP.",
+  "name": "Artificer",
+  "passives": [
+   {
+    "desc": "Items are 25% more effective.",
+    "id": "tinkerer",
+    "name": "Tinkerer"
+   },
+   {
+    "desc": "Start each battle with a barrier.",
+    "id": "spare_parts",
+    "name": "Spare Parts"
+   },
+   {
+    "desc": "+10% speed.",
+    "id": "quick_hands",
+    "name": "Quick Hands"
+   }
+  ]
+ },
+ "bellbound": {
+  "abilities": [],
+  "desc": "Late optional resonance specialization with tradeoffs.",
+  "mastery": "Planned: not yet implemented.",
+  "name": "Bellbound",
+  "passives": []
+ },
+ "cantor": {
+  "abilities": [],
+  "desc": "Songs, tempo, party support.",
+  "mastery": "Planned: not yet implemented.",
+  "name": "Cantor",
+  "passives": []
+ },
+ "chronist": {
+  "abilities": [],
+  "desc": "Initiative and delayed effects, with anti-loop safeguards.",
+  "mastery": "Planned: not yet implemented.",
+  "name": "Chronist",
+  "passives": []
+ },
+ "duelist": {
+  "abilities": [],
+  "desc": "Precision, stance, single-target pressure.",
+  "mastery": "Planned: not yet implemented.",
+  "name": "Duelist",
+  "passives": []
+ },
+ "hexweaver": {
+  "abilities": [],
+  "desc": "Debuffs, damage over time, risk management.",
+  "mastery": "Planned: not yet implemented.",
+  "name": "Hexweaver",
+  "passives": []
+ },
+ "mender": {
+  "abilities": [
+   {
+    "desc": "Heal one ally and cleanse their debuffs.",
+    "effect": "heal_cleanse",
+    "id": "triage",
+    "mp": 8,
+    "name": "Triage",
+    "power": 2.0,
+    "target": "ally"
+   },
+   {
+    "desc": "A strong single-target heal.",
+    "effect": "heal",
+    "id": "mend_wounds",
+    "mp": 12,
+    "name": "Mend Wounds",
+    "power": 3.5,
+    "target": "ally"
+   },
+   {
+    "desc": "Barrier and small heal for one ally.",
+    "effect": "barrier_heal",
+    "id": "ward",
+    "mp": 10,
+    "name": "Ward",
+    "power": 0,
+    "target": "ally"
+   },
+   {
+    "desc": "Regeneration for one ally over 3 turns.",
+    "effect": "regen",
+    "id": "renew",
+    "mp": 10,
+    "name": "Renew",
+    "power": 0,
+    "target": "ally"
+   },
+   {
+    "desc": "Heal and cleanse the whole party.",
+    "effect": "heal_all_cleanse",
+    "id": "sanctuary",
+    "mp": 20,
+    "name": "Sanctuary",
+    "power": 2.0,
+    "target": "allies"
+   },
+   {
+    "desc": "Revive a fallen ally at half HP.",
+    "effect": "revive",
+    "id": "second_chance",
+    "mp": 24,
+    "name": "Second Chance",
+    "power": 0,
+    "target": "ally"
+   }
+  ],
+  "desc": "Recovery, cleansing, prevention.",
+  "mastery": "Field Medic: healing also grants a small barrier.",
+  "name": "Mender",
+  "passives": [
+   {
+    "desc": "Healing is 20% stronger.",
+    "id": "gentle_hands",
+    "name": "Gentle Hands"
+   },
+   {
+    "desc": "Start each battle with a 20-point barrier.",
+    "id": "preventive_care",
+    "name": "Preventive Care"
+   },
+   {
+    "desc": "Immune to silence.",
+    "id": "steady_pulse",
+    "name": "Steady Pulse"
+   }
+  ]
+ },
+ "ranger": {
+  "abilities": [],
+  "desc": "Marks, ranged pressure, scouting.",
+  "mastery": "Planned: not yet implemented.",
+  "name": "Ranger",
+  "passives": []
+ },
+ "sentinel": {
+  "abilities": [],
+  "desc": "Barriers and interception, distinct from Vanguard.",
+  "mastery": "Planned: not yet implemented.",
+  "name": "Sentinel",
+  "passives": []
+ },
+ "vanguard": {
+  "abilities": [
+   {
+    "desc": "Guard and gain a barrier absorbing 40 damage.",
+    "effect": "barrier_guard",
+    "id": "shield_wall",
+    "mp": 6,
+    "name": "Shield Wall",
+    "power": 0,
+    "target": "self"
+   },
+   {
+    "desc": "Draw enemy attention; next attacks target you.",
+    "effect": "taunt",
+    "id": "taunt",
+    "mp": 4,
+    "name": "Taunt",
+    "power": 0,
+    "target": "enemy"
+   },
+   {
+    "desc": "Guard and counter the next physical hit.",
+    "effect": "counter",
+    "id": "counter_stance",
+    "mp": 8,
+    "name": "Counter Stance",
+    "power": 0,
+    "target": "self"
+   },
+   {
+    "desc": "Heavy blow; stronger while guarding.",
+    "effect": "damage",
+    "id": "bulwark_slam",
+    "mp": 10,
+    "name": "Bulwark Slam",
+    "power": 1.6,
+    "target": "enemy"
+   },
+   {
+    "desc": "Barrier for the whole party.",
+    "effect": "barrier_all",
+    "id": "hold_the_line",
+    "mp": 12,
+    "name": "Hold the Line",
+    "power": 0,
+    "target": "allies"
+   },
+   {
+    "desc": "Regen and barrier when HP is low.",
+    "effect": "regen_barrier",
+    "id": "last_stand",
+    "mp": 16,
+    "name": "Last Stand",
+    "power": 0,
+    "target": "self"
+   }
+  ],
+  "desc": "Protection, challenge, counterplay.",
+  "mastery": "Aegis: guard also restores 5 MP.",
+  "name": "Vanguard",
+  "passives": [
+   {
+    "desc": "+10% max HP.",
+    "id": "sturdy",
+    "name": "Sturdy"
+   },
+   {
+    "desc": "Small counter damage when hit.",
+    "id": "retaliate",
+    "name": "Retaliate"
+   },
+   {
+    "desc": "Resist stun once per battle.",
+    "id": "iron_will",
+    "name": "Iron Will"
+   }
+  ]
+ },
+ "wayfarer": {
+  "abilities": [
+   {
+    "desc": "Quick strike; grants Haste to self.",
+    "effect": "damage_haste",
+    "id": "couriers_dash",
+    "mp": 6,
+    "name": "Courier's Dash",
+    "power": 1.2,
+    "target": "enemy"
+   },
+   {
+    "desc": "Marks an enemy vulnerable to all damage.",
+    "effect": "vulnerable",
+    "id": "beacon_mark",
+    "mp": 8,
+    "name": "Beacon Mark",
+    "power": 0,
+    "target": "enemy"
+   },
+   {
+    "desc": "Restore HP and MP to self.",
+    "effect": "heal_mp",
+    "id": "second_wind",
+    "mp": 8,
+    "name": "Second Wind",
+    "power": 0,
+    "target": "self"
+   },
+   {
+    "desc": "Strike that may blind.",
+    "effect": "damage_blind",
+    "id": "shortcut",
+    "mp": 10,
+    "name": "Shortcut",
+    "power": 1.4,
+    "target": "enemy"
+   },
+   {
+    "desc": "Haste for the party.",
+    "effect": "haste_all",
+    "id": "rally_cry",
+    "mp": 12,
+    "name": "Rally Cry",
+    "power": 0,
+    "target": "allies"
+   },
+   {
+    "desc": "Two rapid strikes.",
+    "effect": "damage_twice",
+    "id": "echo_step",
+    "mp": 16,
+    "name": "Echo Step",
+    "power": 2.0,
+    "target": "enemy"
+   }
+  ],
+  "desc": "Adaptable support and exploration benefits.",
+  "mastery": "Wayfinder: ATB fills 10% faster.",
+  "name": "Wayfarer",
+  "passives": [
+   {
+    "desc": "Carry +20% items (slice: +10% gold).",
+    "id": "light_packer",
+    "name": "Light Packer"
+   },
+   {
+    "desc": "+10% accuracy.",
+    "id": "keen_eyes",
+    "name": "Keen Eyes"
+   },
+   {
+    "desc": "+10% escape chance.",
+    "id": "fleet",
+    "name": "Fleet"
+   }
+  ]
+ }
+}
