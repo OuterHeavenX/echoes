@@ -1,0 +1,61 @@
+name: Pages Playtest Build
+
+# Builds the Godot web export in CI and deploys it to GitHub Pages.
+# Why CI instead of pushing the built files? The Muse GitHub App cannot
+# push the 38 MB binary .wasm (its file tools are text-only), so the
+# workflow regenerates assets, imports, and exports from source on
+# every push to main. No secrets are needed.
+# Pages setup (owner does once, in repo Settings > Pages):
+#   Build and deployment > Source: GitHub Actions.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate original sprites and audio
+        run: |
+          python3 -m pip install --quiet pillow
+          python3 tools/gen_assets.py
+      - name: Download Godot 4.7.2 and export templates
+        run: |
+          curl -L -o godot.zip https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip
+          unzip -q godot.zip
+          chmod +x Godot_v4.7.2-stable_linux.x86_64
+          mkdir -p ~/.local/share/godot/export_templates/4.7.2.stable
+          curl -L -o templates.tpz https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz
+          unzip -q templates.tpz -d /tmp/templates
+          cp /tmp/templates/templates/* ~/.local/share/godot/export_templates/4.7.2.stable/
+      - name: Import and export Web (single-threaded, no COOP headers needed)
+        run: |
+          ./Godot_v4.7.2-stable_linux.x86_64 --headless --path . --import
+          ./Godot_v4.7.2-stable_linux.x86_64 --headless --path . --export-release "Web" dist/web/index.html
+          touch dist/web/.nojekyll
+          ls -lh dist/web/
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/web
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
