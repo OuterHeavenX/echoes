@@ -1,0 +1,250 @@
+{
+ "boss_intro": {
+  "effects": [
+   {
+    "type": "battle",
+    "value": "boss_warden"
+   }
+  ],
+  "lines": [
+   {
+    "portrait": "warden",
+    "speaker": "Extraction Warden",
+    "text": "Extraction schedule is law. The fork is Authority property. Stand down, courier."
+   },
+   {
+    "portrait": "rowan",
+    "speaker": "Rowan",
+    "text": "Then write my sister's name in your schedule. You took her out of a whole street."
+   },
+   {
+    "portrait": "mira",
+    "speaker": "Mira",
+    "text": "Rowan, the bell is overcharging. If it blows, it takes the survivors with it. We end this now."
+   }
+  ],
+  "speaker": "Extraction Warden"
+ },
+ "boss_victory": {
+  "effects": [
+   {
+    "type": "flag",
+    "value": "boss_defeated"
+   },
+   {
+    "type": "quest",
+    "value": "main_rescue:2"
+   },
+   {
+    "type": "item",
+    "value": "potion:3"
+   }
+  ],
+  "lines": [
+   {
+    "portrait": "garran",
+    "speaker": "Garran",
+    "text": "The survivors are alive. Shaken, half-named, but alive. That's more than the Authority promised them."
+   },
+   {
+    "portrait": "rowan",
+    "speaker": "Rowan",
+    "text": "She was here. The ledger page says so. That's a start. That's not an ending."
+   }
+  ],
+  "speaker": "Garran"
+ },
+ "chest_ledger": {
+  "lines": [
+   {
+    "portrait": "mira",
+    "speaker": "Mira",
+    "text": "A ledger page, half-burned. A name, in your sister's hand: 'If you read this, I was here.'"
+   }
+  ],
+  "speaker": "Mira"
+ },
+ "end_chapter": {
+  "lines": [
+   {
+    "portrait": "rowan",
+    "speaker": "Rowan",
+    "text": "Bellweather will forget this night by morning, if the Authority has its way. We won't let it."
+   },
+   {
+    "portrait": "mira",
+    "speaker": "Mira",
+    "text": "Then we take the rail north. The Rainward Line carries more than cargo. It carries witnesses."
+   },
+   {
+    "portrait": "garran",
+    "speaker": "Garran",
+    "text": "And I carry a shield. Let's go while the road still remembers us."
+   }
+  ],
+  "speaker": "Rowan"
+ },
+ "festival_greeting": {
+  "lines": [
+   {
+    "portrait": "rowan",
+    "speaker": "Rowan",
+    "text": "Lanternwake. Every window lit, every canal singing. I have one delivery, and then I'm done for the night."
+   },
+   {
+    "portrait": "mira",
+    "speaker": "Mira",
+    "text": "Rowan! Good, you're early. The station bell is already humming wrong. Deliver the fork, and don't let them keep it."
+   }
+  ],
+  "speaker": "Rowan"
+ },
+ "innkeeper": {
+  "lines": [
+   {
+    "portrait": "npc_inn",
+    "speaker": "Innkeeper Dara",
+    "text": "A bed, a hot meal, and no questions about bells. 20 gold, and you'll wake up whole."
+   }
+  ],
+  "speaker": "Innkeeper Dara"
+ },
+ "lantern_found": {
+  "lines": [
+   {
+    "portrait": "rowan",
+    "speaker": "Rowan",
+    "text": "One lantern, rescued from the canal steps. It still smells faintly of festival oil."
+   }
+  ],
+  "speaker": "Rowan"
+ },
+ "mira_intro": {
+  "lines": [
+   {
+    "portrait": "mira",
+    "speaker": "Mira",
+    "text": "I built parts of that extraction rig. I told myself it was medicine. Tonight it took a person out of a street."
+   },
+   {
+    "portrait": "mira",
+    "speaker": "Mira",
+    "text": "I'm coming with you. Not to fix my conscience. To unbuild what I helped build."
+   }
+  ],
+  "speaker": "Mira"
+ },
+ "old_tomas": {
+  "effects": [
+   {
+    "type": "quest",
+    "value": "main_evidence:1"
+   }
+  ],
+  "lines": [
+   {
+    "portrait": "npc_tomas",
+    "speaker": "Old Tomas",
+    "text": "A sister? I... I set a place at my table for someone, every Lanternwake. I never knew why, until you asked."
+   },
+   {
+    "portrait": "npc_tomas",
+    "speaker": "Old Tomas",
+    "text": "There's a ledger in the station. Paper remembers what bells are made to forget."
+   }
+  ],
+  "speaker": "Old Tomas"
+ },
+ "prologue_incident": {
+  "effects": [
+   {
+    "type": "flag",
+    "value": "incident_done"
+   },
+   {
+    "type": "quest",
+    "value": "main_evidence:0"
+   },
+   {
+    "type": "party",
+    "value": "mira"
+   },
+   {
+    "type": "party",
+    "value": "garran"
+   }
+  ],
+  "lines": [
+   {
+    "portrait": "rowan",
+    "speaker": "Rowan",
+    "text": "The fork is delivered. The bell sings, and then it doesn't. It screams."
+   },
+   {
+    "portrait": "npc_official",
+    "speaker": "Authority Official",
+    "text": "Citizens, remain calm. A scheduled extraction has concluded. There is nothing to remember."
+   },
+   {
+    "portrait": "rowan",
+    "speaker": "Rowan",
+    "text": "Where is she? Where is my sister? You all lived on her street! You ate at her table!"
+   },
+   {
+    "portrait": "npc_official",
+    "speaker": "Authority Official",
+    "text": "There was no one on that street by that name. Hand over the tuning fork, courier. It is evidence."
+   },
+   {
+    "portrait": "mira",
+    "speaker": "Mira",
+    "text": "Rowan, run. Now. The undercroft door is open and the guards are coming this way."
+   },
+   {
+    "portrait": "garran",
+    "speaker": "Garran",
+    "text": "I was a warden. I know what they do to evidence. Follow me, and keep the fork close."
+   }
+  ],
+  "speaker": "Rowan"
+ },
+ "sera_recruit": {
+  "effects": [
+   {
+    "type": "party",
+    "value": "sera"
+   },
+   {
+    "type": "flag",
+    "value": "sera_recruited"
+   }
+  ],
+  "lines": [
+   {
+    "portrait": "sera",
+    "speaker": "Sera Voss",
+    "text": "I'm Sera. I came to Bellweather with bandages and questions, and I found a street full of people who had forgotten how to grieve."
+   },
+   {
+    "portrait": "sera",
+    "speaker": "Sera Voss",
+    "text": "You three are going back under that station, aren't you? Then I'm coming. Someone in this party should refuse to treat people as numbers."
+   },
+   {
+    "portrait": "rowan",
+    "speaker": "Rowan",
+    "text": "Welcome aboard, Sera. We could use a physician who argues with the plan."
+   }
+  ]
+ },
+ "shopkeeper": {
+  "lines": [
+   {
+    "portrait": "npc_shop",
+    "speaker": "Shopkeeper",
+    "text": "Tonics, draughts, salves. The Authority can't extract a good night's stock, much as it tries."
+   }
+  ],
+  "speaker": "Shopkeeper"
+ }
+}
