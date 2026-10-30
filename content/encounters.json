@@ -1,0 +1,1 @@
+{"boss_warden":{"enemies":["warden"],"gold":120,"is_boss":true,"jp":45,"xp":220},"undercroft_a":{"enemies":["canal_rat","memory_wisp"],"gold":18,"is_boss":false,"jp":10,"xp":42},"undercroft_b":{"enemies":["sentry_drone","rust_mender"],"gold":26,"is_boss":false,"jp":13,"xp":58},"undercroft_c":{"enemies":["memory_wisp","memory_wisp"],"gold":18,"is_boss":false,"jp":12,"xp":48}}
